@@ -63,7 +63,7 @@ header h1 {
     list-style-type: none;
 }
 
-#nav li:hover {
+#nav a:hover {
     background-color: rgb(66, 91, 124);
 }
 
