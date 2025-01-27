@@ -1,0 +1,1 @@
+document.querySelector('#fullName').innerHTML = fullName('alan','scalia');	
