@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Webpage for a place to visit">
+    <meta name="author" content="Alan Scalia">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <title>WDD 131 - Place</title>
+</head>
+
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div id="hero">
+            <picture>
+                <source srcset="images/elchalten-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/elchalten-medium.webp" media="(min-width: 426px)">
+                <img src="images/elchalten-small.webp"
+                    alt="Picture of Mount Fitz Roy, one of the many beautiful places in La Patagonia Argentina."
+                    width="600" height="100%">
+            </picture>
+        </div>
+        <section id="data">
+            <h2 class="section-title">Data</h2>
+            <div class="data-container">
+                <ul class="list-category">
+                    <li>Area:</li>
+                    <li>Population:</li>
+                    <li>Capital:</li>
+                    <li>Languages:</li>
+                    <li>Currency:</li>
+                    <li>Time Zone:</li>
+                    <li>Calling Code:</li>
+                    <li>Internet TLD:</li>
+                </ul>
+                <ul class="list-data">
+                    <li>2,780,400 km&sup2;</li>
+                    <li>46,044,703</li>
+                    <li>Buenos Aires</li>
+                    <li>Spanish</li>
+                    <li>Argentine Peso</li>
+                    <li>UTC=3</li>
+                    <li>+54</li>
+                    <li>.ar</li>
+                </ul>
+            </div>
+        </section>
+        <section id="weather">
+            <h2 class="section-title" id="weather-title">Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon" width="50">
+            <div class="data-container">
+                <ul class="list-category">
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+                <ul class="list-data">
+                    <li>30 &deg;C</li>
+                    <li>Sunny</li>
+                    <li>20 km/h</li>
+                    <li>N/A</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span>Alan Scalia - Argentina </p>
+        <img src="images/argentina-flag.svg" alt="argentina-flag" width="50">
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
