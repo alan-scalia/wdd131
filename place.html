@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/place-large.css">
 
     <script src="scripts/place.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
 
     <title>WDD 131 - Place</title>
 </head>
@@ -57,7 +56,7 @@
         </section>
         <section id="weather">
             <h2 class="section-title" id="weather-title">Weather</h2>
-            <img src="images/weather.svg" alt="Weather icon" width="50">
+            <img src="images/weather.svg" alt="Weather icon" id="weather-icon" width="50">
             <div class="data-container">
                 <ul class="list-category">
                     <li>Temperature:</li>
@@ -66,10 +65,10 @@
                     <li>Wind Chill:</li>
                 </ul>
                 <ul class="list-data">
-                    <li>30 &deg;C</li>
+                    <li id="temperature"></li>
                     <li>Sunny</li>
-                    <li>20 km/h</li>
-                    <li>N/A</li>
+                    <li id="wind-speed"></li>
+                    <li id="wind-chill"></li>
                 </ul>
             </div>
         </section>

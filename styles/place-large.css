@@ -9,18 +9,17 @@
     }
 
     .section-title {
-        background-color: var(--details-color);
+        background-color: var(--tertiary-color);
         width: 100%;
-        text-align: center;
         padding: 0.75rem;
         margin-right: 2.3rem;
+        color: var(--secondary-color);
     }
 
     #data {
         position: absolute;
         top: 3rem;
         left: 1.5rem;
-
     }
 
     #weather {
@@ -29,6 +28,18 @@
         right: 1.5rem;
     }
 
+    #weather-title::after {
+        content: '☀';
+        font-weight: 400;
+        font-size: 3rem;
+        color: var(--details-color);
+        margin-left: 20%;
+        top: 0;
+        position: absolute;
+    }
 
+    #weather-icon {
+        display: none;
+    }
 
 }
