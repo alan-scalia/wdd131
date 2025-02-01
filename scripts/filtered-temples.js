@@ -77,7 +77,7 @@ const temples = [
         dedicated: "2012, June, 10",
         area: 32032,
         imageUrl:
-            "http://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manaus-brazil/400x250/lds-temple-manaus-brazil-1085299-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manaus-brazil/400x250/lds-temple-manaus-brazil-1085299-wallpaper.jpg"
     },
     {
         templeName: "Cordoba Argentina",
@@ -152,6 +152,7 @@ function createCard(objTemple) {
 
     //card
     container.appendChild(card);
+    card.classList.add('card');
 
     //title
     title.innerHTML = `${objTemple.templeName}`;
@@ -161,6 +162,8 @@ function createCard(objTemple) {
     image["src"] = `${objTemple.imageUrl}`;
     image["alt"] = `Picture of ${objTemple.templeName} Temple`;
     image["loading"] = 'lazy';
+    image["width"] = '400';
+    image["height"] = '250';
     card.appendChild(image);
 
     //info - parse the info values and insert them into an unordered list.
