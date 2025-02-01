@@ -78,6 +78,7 @@ header h1 {
 main {
     margin: 0 auto 40px auto;
     max-width: 75vw;
+    min-height: 650px;
 }
 
 main h2 {
