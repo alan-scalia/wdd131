@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    max-width: 1470px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(31, 71, 122);
+    color: white;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 0 3px 2px 3px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#menu:hover {
+    cursor: pointer;
+    background-color: rgb(66, 91, 124);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "☰";
+}
+
+#menu.open {
+    background-color: rgb(66, 91, 124);
+}
+
+#nav {
+    text-align: center;
+    display: none;
+}
+
+#nav.open {
+    display: block;
+}
+
+#nav li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#nav a:hover {
+    background-color: rgb(66, 91, 124);
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+main {
+    margin: 0 auto 40px auto;
+    max-width: 75vw;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#cards-container {
+    display: grid;
+    grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+#cards-container div {
+    display: flex;
+    flex-direction: column;
+    max-width: 415px;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    border: 1px solid darkgray;
+}
+
+#cards-container div:hover {
+    box-shadow: 1px 0px 10px darkgray;
+}
+
+#cards-container div h3 {
+    margin: 10px 0;
+}
+
+#cards-container div ul {
+    text-align: center;
+    font-size: .8rem;
+    list-style: none;
+    width: 90%;
+    margin: 5px 0;
+    padding-top: 5px;
+    border-top: 1px solid gray;
+}
+
+#cards-container div img {
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 0 8px rgb(56, 56, 56);
+}
+
+
+footer {
+    background-color: rgb(31, 71, 122);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 20px;
+}
+
+.card {
+    border: 1px solid burlywood;
+}
