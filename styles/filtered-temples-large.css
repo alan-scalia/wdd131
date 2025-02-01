@@ -18,6 +18,7 @@
     }
 
     #cards-containter {
+        width: 400px;
         max-width: 65vw;
         margin: 0 auto;
     }

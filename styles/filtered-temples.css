@@ -95,7 +95,7 @@ main h2 {
 
 .card {
     display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     flex-direction: column;
     max-width: 415px;
     justify-content: center;
@@ -123,8 +123,9 @@ main h2 {
 }
 
 .card img {
-    max-width: 90%;
+    width: 300;
     height: auto;
+    max-width: 90%;
     box-shadow: 0 0 8px rgb(56, 56, 56);
 }
 
