@@ -8,7 +8,7 @@
 body {
     font-family: 'Liter', sans-serif;
     background-color: var(--primary-color);
-    color: var(--quaternary-color);
+    color: white;
     margin: 0 auto;
     padding: 0;
     max-width: 1400px;
