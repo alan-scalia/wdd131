@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #5E805F;
+    --secondary-color: #273D24;
+    --tertiary-color: #669859;
+    --quaternary-color: #b2bfaf;
+}
+
+body {
+    font-family: 'Liter', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+}
+
+section {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+}
+
+img {
+    width: 40vw;
+    height: auto;
+}
+
+p {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+}
