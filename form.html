@@ -9,6 +9,11 @@
     <meta name="author" content="Alan Scalia">
     <title>W05 Assignment: Product Review Form</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles/form.css">
 </head>
 
@@ -21,7 +26,7 @@
         <fieldset>
             <label for="product-name">Product Name</label>
             <select name="product-name" id="product-name" required>
-                <option value="select" disabled selected>Select a Product ..</option>
+                <option value="" disabled selected>Select a Product ..</option>
             </select>
         </fieldset>
 
@@ -79,7 +84,7 @@
         <img src="images/argentina-flag.svg" alt="argentina-flag" width="50" height="50">
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 
 </html>
