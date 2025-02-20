@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #5E805F;
+    --secondary-color: #273D24;
+    --tertiary-color: #669859;
+    --quaternary-color: #b2bfaf;
+    --font-family: 'Liter', sans-serif;
+    --second-font-family: 'Maven Pro', sans-serif;
+}
+
+#index-main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    padding: 2rem .5rem;
+}
+
+
+#index-main img {
+    width: 100%;
+    height: auto;
+}
+
+#index-main .paragraphs {
+    font-size: 1.9vh;
+    font-weight: 600;
+    color: var(--secondary-color);
+    width: 100%;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    #index-main {
+        width: 100vw;
+    }
+
+    #index-main h2 {
+        font-size: 1.3rem;
+    }
+
+    #index-main section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #index-main img {
+        width: 90vw;
+        height: auto;
+    }
+
+    #index-main .paragraphs {
+        width: 80vw;
+        font-size: 2vh;
+    }
+}

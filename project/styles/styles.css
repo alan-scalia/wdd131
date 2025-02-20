@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #5E805F;
+    --secondary-color: #273D24;
+    --tertiary-color: #669859;
+    --quaternary-color: #b2bfaf;
+    --font-family: 'Liter', sans-serif;
+    --second-font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--quaternary-color);
+    padding: 0;
+    margin: 0;
+}
+
+#hamburger {
+    display: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    max-width: 1700px;
+    width: 90%;
+    margin: .2rem auto 0 auto;
+    justify-items: center;
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--second-font-family);
+    text-shadow: #273D24 2px 2px 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4vh;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    padding: 1rem 0;
+    font-size: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+header img {
+    width: 35vw;
+    max-width: 700px;
+    height: auto;
+}
+
+/* NAV */
+nav {
+    width: 90%;
+    max-width: 1700px;
+    height: 5vh;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    align-content: center;
+    position: sticky;
+    top: .2rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    max-width: 60%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+    text-shadow: var(--quaternary-color) 2px 2px 4px;
+}
+
+nav ul li a:hover {
+    color: var(--tertiary-color);
+    text-shadow: var(--tertiary-color) 2px 2px 4px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--primary-color);
+    max-width: 1700px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--second-font-family);
+    text-shadow: var(--secondary-color) 2px 2px 5px;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 1rem;
+}
+
+.link-column a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: var(--quaternary-color) 2px 2px 4px;
+    margin: 0 1rem;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+#author-data img {
+    width: 1.3vw;
+    min-width: 15px;
+    height: auto;
+    margin: 0 .5rem;
+}
+
+#author-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1700px;
+    width: 90%;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header img {
+        width: 60%;
+        margin: 0 20%;
+    }
+
+    h1 {
+        font-size: 3vh;
+    }
+
+    h2,
+    main {
+        width: 100%;
+    }
+
+    #hamburger {
+        display: block;
+        background-color: var(--secondary-color);
+        color: white;
+        width: 100vw;
+        text-align: end;
+    }
+
+    #hamburger-button {
+        margin-right: 1rem;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    #hamburger-button:hover {
+        cursor: pointer;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        top: 0;
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 1.7vh;
+    }
+
+    footer {
+        font-size: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .link-column a {
+        margin: .3rem 0;
+    }
+
+    .link-column {
+        align-items: center;
+    }
+
+    #author-data {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #social {
+        padding: 0;
+    }
+
+    #author-data img {
+        width: 2vw;
+    }
+
+}
