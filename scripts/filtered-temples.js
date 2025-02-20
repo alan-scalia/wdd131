@@ -125,7 +125,7 @@ function filterTemples(temples, filterCategory) {
             console.log('WRONG CATEGORY TO FILTER');
             break;
     }
-    
+
     templesFiltered.map((temple) => { createCard(temple); });
 }
 
